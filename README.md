@@ -58,7 +58,7 @@ The command is
 
 ```git clone [source] [destination]```
 
-For this course, your repository will be created after you accept the assignment at https://classroom.github.com/a/KGymETjw .
+For this course, your repository will be created after you accept the assignment at https://classroom.github.com/a/oQAaX4zy .
 The source will be https://github.com/psu-ds410/hw-spring2022-[github-username].git and you can use ds410hw as the destination. For example, I would clone the homework repository as:
 
 ```git clone https://github.com/psu-ds410/hw-spring2022-dkifer.git ds410hw```
