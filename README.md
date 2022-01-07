@@ -86,7 +86,7 @@ to see the list.
 
 **Important #2** if you stage a file, and then edit it, you need to stage it again. When you later commit your changes, git will only look at what has been staged. If you edit a file, stage the file, then edit it again (and forget to stage again), ony the first set of edits will be committed.
 
-**Important #3** do not git add a directory (do not do ```git add mydirectory/''' and do not do ```git add *'''. List out the specific files, like ```git add mydirectory/myfile.py'''
+**Important #3** do not git add a directory (do not do ```git add mydirectory/``` and do not do ```git add *```. List out the specific files, like ```git add mydirectory/myfile.py'''
 
 ## Committing files (git commit)
 
