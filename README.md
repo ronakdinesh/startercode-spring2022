@@ -10,7 +10,7 @@ To avoid typing in your access token all the time, type this in the command line
 and then git will then remember your credentials after the next time you use them.
 
 # startercode
-For a nicely formatted version of this file, go to: https://github.com/psu-ds410/startercode-spring2022/blob/master/README.md
+For a nicely formatted version of this file, go to: https://github.com/psu-ds410/startercode-spring2022/blob/main/README.md
 
 This repository contains the starter code for all of the homeworks for DS 410 to be used with Github Classroom.
 
@@ -36,7 +36,7 @@ Whenever you are notified to update the starter code, type the following in a li
 
 This will pull the updates from the startercode repository. If you are not using linux, type the following into the git shell:
 
-```git pull staff2 master --allow-unrelated-histories```
+```git pull staff2 main --allow-unrelated-histories```
 
 These actions may require you to merge any conflicts (so make sure you are familiar with the git instructions later in this README file).
 
@@ -109,7 +109,7 @@ Make the commit message informative to describe what your recent file edits did.
 
 Committing a your changes only updates your file history on your local machine. In order to save it on the github servers, you need to push the changes using
 
-``` git push origin master```
+``` git push origin main```
 
 (sometimes just typing ```git push``` is enough)
 
@@ -117,7 +117,7 @@ Committing a your changes only updates your file history on your local machine. 
 
 If you have clones of your repositories on different computers, some of them will be out of date. Use 
 
-```git pull origin master``` 
+```git pull origin main``` 
 
 to download the latest changes into your local repository. It is a good idea to git pull before git push.
 
@@ -174,7 +174,7 @@ git push
 
 ## git branches
 
-Branches are a useful part of git, especially when collaborating on a team. A typical workflow is to create a branch, add a new feature to your code, test it, commit the branch, and then merge it onto the master branch. To learn about branching, the linked book at the start of this section is a good place to start.
+Branches are a useful part of git, especially when collaborating on a team. A typical workflow is to create a branch, add a new feature to your code, test it, commit the branch, and then merge it onto the main branch. To learn about branching, the linked book at the start of this section is a good place to start.
 
 
 # Proper/Improper uses of github
