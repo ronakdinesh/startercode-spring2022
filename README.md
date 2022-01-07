@@ -2,6 +2,13 @@
 
 If you don't, you are likely to mess up the github repository and waste a lot of time from a lot of people (including yourself).
 
+# Access Tokens
+
+Github does not allow password authentication from the command line. Instead, you will need to use an access token in place of a password. To learn how to make one, go here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token (make sure to set expiration date after the semester and final are over, and make sure to set the permissions for the token appropriately).
+
+To avoid typing in your access token all the time, type this in the command line: ```git config --global credential.helper store```
+git will then remember your credentials after the next time you use them.
+
 # startercode
 For a nicely formatted version of this file, go to: https://github.com/psu-ds410/startercode-spring2022/blob/master/README.md
 
