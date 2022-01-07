@@ -40,6 +40,8 @@ This will pull the updates from the startercode repository. If you are not using
 
 These actions may require you to merge any conflicts (so make sure you are familiar with the git instructions later in this README file).
 
+Once merge conflicts (if any) are resolved, make sure to ```git push```
+
 If you mess up the merge and want to download the updates manually, visit https://github.com/psu-ds410/startercode-spring2022 to find the recently changed code and download it.
 
 # Git basics
