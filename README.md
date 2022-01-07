@@ -86,7 +86,7 @@ to see the list.
 
 **Important #2** if you stage a file, and then edit it, you need to stage it again. When you later commit your changes, git will only look at what has been staged. If you edit a file, stage the file, then edit it again (and forget to stage again), ony the first set of edits will be committed.
 
-**Important #3** do not git add a directory (do not do ```git add mydirectory/``` and do not do ```git add *```. List out the specific files, like ```git add mydirectory/myfile.py'''
+**Important #3** do not git add a directory (do not do ```git add mydirectory/``` and do not do ```git add *```. List out the specific files, like ```git add mydirectory/myfile.py```
 
 ## Committing files (git commit)
 
@@ -180,6 +180,6 @@ Branches are a useful part of git, especially when collaborating on a team. A ty
 - The github repository has a file called .gitignore. 
    - you can edit it (don't forget to add/push/commit) to tell it which files should never be in the github repository
    - for example, adding the line *.pyc will make git ignore all files that end in .pyc
-   - these files will no longer show up when you type ```git status'''
-   - on linux and Mac shell, files that start with . do not show up unless you type ``ls -al'' in the command prompt
+   - these files will no longer show up when you type ```git status```
+   - on linux and Mac shell, files that start with . do not show up unless you type ```ls -al``` in the command prompt
    - Windows also likes to hide files that start with . (you may need to tell it to show hidden files)
