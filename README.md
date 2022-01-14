@@ -40,6 +40,8 @@ This will pull the updates from the startercode repository. If you are not using
 
 These actions may require you to merge any conflicts (so make sure you are familiar with the git instructions later in this README file).
 
+Once merge conflicts (if any) are resolved, make sure to ```git push```
+
 If you mess up the merge and want to download the updates manually, visit https://github.com/psu-ds410/startercode-spring2022 to find the recently changed code and download it.
 
 # Git basics
@@ -50,7 +52,7 @@ If you are using a non-linux system, make sure to install git and then use the g
 
 A typical basic workflow in git is:
 * Initialization: use **git clone** to download the repository on your computer the first time.
-* Edit your files
+* **git pull** before you edit your files. This ensures you get the latest versions of the file from github.com
 * **git status** to see which files you have changed (in case you forget)
 * **git add** to stage the files you changed
 * **git commit** to update your local repository with the staged files
