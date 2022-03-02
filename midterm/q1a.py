@@ -14,16 +14,10 @@ class q1a(MockMR):
                 self.airport_cache[src] += 1
             else:
                 self.airport_cache = 1
-            
-        if len(self.airport_cache[src]) > limit:
-            for i in self.airport_cache:
-                yield (i, self.airport_cache[i])
-            self.cache.clear()
 
     def mapper_final(self):
-        if len(self.airport_cache[src]) != 0:
-            for i in self.airport_cache:
-                yield (i, self.airport_cache[i])
+        for src in self.airport_cache:
+            yield (src, self.airport_cache[src])
 
 
     def reducer(self, key, values):
