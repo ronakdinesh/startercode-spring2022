@@ -6,7 +6,7 @@ class q1b(MockMR):
         limit = 20
         rows =line.split(",")
         airline,src,dest,stops=rows
-        if parts != ['Airline','Source','Destination','Stops']:
+        if rows != ['Airline','Source','Destination','Stops']:
             if dest in self.airport:
                 self.airport_cache[dest] += 1
             else:
