@@ -12,32 +12,38 @@ messages the mapper needs to send so that the reducer can compute the right answ
  Put your code in q2.py
  Make sure to add/commit/push. Submit to gradescope.'''
 
+from mockmr import MockMR
+import random
+
 class q2(MockMR):
-    def mapper_init(self):
-        self.cache= {}
+    def mapper_init(self): 
+     self.airport_cache ={}
 
-    def mapper(self, key, value):
-        if parts != [Airline,Source,Destination,Stops]:
-            #key: Airline, value: ()
-            yield key, value
-        #cache management
-        if len(self.cache) > limit:
-            for i in self.cache:
-                yield (i, self.cache[i])
-            self.cache.clear()
+    def mapper(self, key, line):
+        rows = line.split(",")   
+        airline,src,dest,stops =rows
+        if rows != ['Airline','Source','Destination','Stops']:
+            if src in self.airport_cache:
+                self.airport_cache[src] += 1
+            else:
+                self.airport_cache = 1
+        if rows != ['Airline','Source','Destination','Stops']:
+            if dest in self.airport:
+                self.airport_cache[dest] += 1
+            else:
+                self.airport_cache =1
+            
+        
+    def mapper_final(self):
+        for src in self.airport_cache:
+            yield (src, (self.airport_cache[src],self.airport_cache[dest)
 
 
-     def mapper_final(self):
-        if len(self.cache) != 0:
-            for i in self.cache:
-                yield (i, self.cache[i])
+    def reducer(self, key, values):
+        #keys: source airport, value: destination airport
+        yield key, sum(values)
 
 
-
-    def reducer(self, key, values_iterator):
-        yield key, sum(values_iterator)
-    def reducer_final(self):
-        pass
 if __name__ == "__main__":
 
-    q2.run(trace=True)
+    q1a.run(trace=True)

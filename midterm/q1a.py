@@ -6,7 +6,6 @@ class q1a(MockMR):
      self.airport_cache ={}
 
     def mapper(self, key, line):
-        limit = 20
         rows = line.split(",")   
         airline,src,dest,stops =rows
         if rows != ['Airline','Source','Destination','Stops']:
