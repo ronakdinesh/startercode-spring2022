@@ -18,7 +18,7 @@ class q1b(MockMR):
             self.airport_cache.clear()
 
     def mapper_final(self):
-        if len(self.cache) != 0:
+        if len(self.airport_cache[i]) != 0:
             for i in self.airport_cache:
                 yield (i, self.airport_cache[i])
 
