@@ -5,11 +5,11 @@ class q1(MockMR):
     def mapper_init(self): 
      self.airport_cache ={}
 
-    def mapper(self, key, value):
+    def mapper(self, key, line):
         limit = 20
         rows = line.split(",")   
         airline,src,dest,stops =rows
-        if parts != [Airline,Source,Destination,Stops]:
+        if parts != ['Airline','Source','Destination','Stops']:
             if src in self.airport_cache:
                 self.airport_cache[src] += 1
             else:
