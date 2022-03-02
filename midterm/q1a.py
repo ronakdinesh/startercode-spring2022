@@ -3,13 +3,18 @@ import random
 
 class q1(MockMR):
     def mapper_init(self): 
-     self.cache ={}
+     self.airport_cache ={}
 
     def mapper(self, key, value):
         limit = 20
-        parts = list(([line.strip()]))[0]   
+        rows = line.split(",")   
+        airline,src,dest,stops =rows
         if parts != [Airline,Source,Destination,Stops]:
-            yield parts[1],parts[2]
+            if src in self.airport_cache:
+                self.airport_cache[src] += 1
+            else:
+                self.airport_cache = 1
+            
 
         if len(self.cache) > limit:
             for i in self.cache:
