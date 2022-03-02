@@ -46,4 +46,4 @@ class q2(MockMR):
 
 if __name__ == "__main__":
 
-    q1a.run(trace=True)
+    q2.run(trace=True)
