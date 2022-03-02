@@ -1,7 +1,7 @@
 from mockmr import MockMR
 import random
 
-class q1(MockMR):
+class q1a(MockMR):
     def mapper_init(self): 
      self.airport_cache ={}
 
@@ -15,16 +15,15 @@ class q1(MockMR):
             else:
                 self.airport_cache = 1
             
-
-        if len(self.cache) > limit:
-            for i in self.cache:
-                yield (i, self.cache[i])
+        if len(self.airport_cache) > limit:
+            for i in self.airport_cache:
+                yield (i, self.airport_cache[i])
             self.cache.clear()
 
     def mapper_final(self):
-        if len(self.cache) != 0:
-            for i in self.cache:
-                yield (i, self.cache[i])
+        if len(self.airport_cache) != 0:
+            for i in self.airport_cache:
+                yield (i, self.airport_cache[i])
 
 
     def reducer(self, key, values):
@@ -34,4 +33,4 @@ class q1(MockMR):
 
 if __name__ == "__main__":
 
-    q1.run(trace=True)
+    q1a.run(trace=True)
