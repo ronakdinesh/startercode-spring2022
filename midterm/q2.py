@@ -15,11 +15,24 @@ messages the mapper needs to send so that the reducer can compute the right answ
 class q2(MockMR):
     def mapper_init(self):
         self.cache= {}
+
     def mapper(self, key, value):
-        if parts != []
-        yield key, value
-    def mapper_final(self):
-        pass
+        if parts != [Airline,Source,Destination,Stops]:
+            #key: Airline, value: ()
+            yield key, value
+        #cache management
+        if len(self.cache) > limit:
+            for i in self.cache:
+                yield (i, self.cache[i])
+            self.cache.clear()
+
+
+     def mapper_final(self):
+        if len(self.cache) != 0:
+            for i in self.cache:
+                yield (i, self.cache[i])
+
+
 
     def reducer(self, key, values_iterator):
         yield key, sum(values_iterator)

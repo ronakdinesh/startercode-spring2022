@@ -3,7 +3,7 @@ import random
 
 class q1(MockMR):
     def mapper_init(self): 
-    self.cache ={}
+     self.cache ={}
 
     def mapper(self, key, value):
         limit = 20
