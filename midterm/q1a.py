@@ -9,7 +9,7 @@ class q1(MockMR):
         limit = 20
         parts = list(([line.strip()]))[0]   
         if parts != [Airline,Source,Destination,Stops]:
-            yield parts[0],parts[2]
+            yield parts[1],parts[2]
 
         if len(self.cache) > limit:
             for i in self.cache:
